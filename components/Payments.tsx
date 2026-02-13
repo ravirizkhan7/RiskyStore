@@ -8,7 +8,7 @@ const Payments: React.FC = () => {
     // In a real app, this would be a link to a real image. 
     // Here we create a dummy link to trigger a "download" feeling.
     const link = document.createElement('a');
-    link.href = '../image/qris.jpg';
+    link.href = qris;
     link.download = 'QRIS_KING_RISKY_OFFC.png';
     link.target = '_blank';
     document.body.appendChild(link);

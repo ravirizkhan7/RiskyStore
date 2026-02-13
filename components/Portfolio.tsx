@@ -34,8 +34,12 @@ const Portfolio: React.FC = () => {
                 <div className="flex justify-between items-end gap-4">
                   <div className="flex-grow">
                     <span className="inline-block text-[10px] font-black uppercase tracking-[0.3em] bg-white text-black px-2 py-1 rounded mb-4">{project.year}</span>
-                    <h3 className="text-3xl md:text-4xl font-black text-white leading-tight">{project.name}</h3>
-                    <p className="text-white/70 mt-3 text-lg line-clamp-2 max-w-md">{project.description}</p>
+                    <h5 className="text-xl md:text-4xl font-black text-white leading-tight">
+                      {project.name}
+                    </h5>
+                    <p className="text-white/70 mt-2 md:mt-3 text-sm md:text-lg line-clamp-2 max-w-md">
+                      {project.description}
+                    </p>
                   </div>
                   <div className="w-14 h-14 rounded-full border-2 border-white/20 flex items-center justify-center shrink-0 group-hover:bg-white group-hover:text-black transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
