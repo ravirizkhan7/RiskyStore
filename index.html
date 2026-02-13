@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>RiskyStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --transition-speed: 800ms;
+      }
+
+      /* Base Theme Variables */
+      [data-theme='dark-cyber'] {
+        --bg-primary: #020617;
+        --bg-secondary: #0f172a;
+        --text-primary: #22d3ee;
+        --text-secondary: #94a3b8;
+        --accent: #0891b2;
+        --border: #164e63;
+        --shadow: 0 0 15px rgba(34, 211, 238, 0.2);
+        --font-main: 'Inter', sans-serif;
+      }
+
+      [data-theme='neon-gaming'] {
+        --bg-primary: #09090b;
+        --bg-secondary: #18181b;
+        --text-primary: #d946ef;
+        --text-secondary: #a1a1aa;
+        --accent: #c026d3;
+        --border: #701a75;
+        --shadow: 0 0 20px rgba(217, 70, 239, 0.3);
+        --font-main: 'Inter', sans-serif;
+      }
+
+      [data-theme='soft-pastel'] {
+        --bg-primary: #171717;
+        --bg-secondary: #262626;
+        --text-primary: #c7d2fe;
+        --text-secondary: #a3a3a3;
+        --accent: #818cf8;
+        --border: #3730a3;
+        --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        --font-main: 'Inter', sans-serif;
+      }
+
+      [data-theme='roblox-power'] {
+        --bg-primary: #000000;
+        --bg-secondary: #111111;
+        --text-primary: #ef4444;
+        --text-secondary: #737373;
+        --accent: #dc2626;
+        --border: #7f1d1d;
+        --shadow: 0 0 30px rgba(239, 68, 68, 0.4);
+        --font-main: 'Inter', sans-serif;
+      }
+
+      [data-theme='comic'] {
+        --bg-primary: #FFEB3B; /* Kuning Komik Terang */
+        --bg-secondary: #2196F3; /* Biru Komik */
+        --text-primary: #000000;
+        --text-secondary: #1a1a1a;
+        --accent: #F44336; /* Merah Komik */
+        --border: #000000;
+        --shadow: 10px 10px 0px 0px #000000;
+        --font-main: 'Bangers', cursive;
+        background-image: radial-gradient(#00000022 1px, transparent 0);
+        background-size: 20px 20px;
+      }
+
+      body {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        font-family: var(--font-main);
+        transition: background-color var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Scroll adjustment for fixed header */
+      section {
+        scroll-margin-top: 80px;
+      }
+
+      @media (max-width: 768px) {
+        section {
+          scroll-margin-top: 64px;
+        }
+      }
+
+      .theme-transition {
+        transition: all var(--transition-speed) ease-in-out;
+      }
+
+      .comic-border {
+        border-width: 4px;
+        border-style: solid;
+        border-color: var(--border);
+      }
+
+      .glow-on-hover:hover {
+        box-shadow: var(--shadow);
+        transform: scale(1.02);
+      }
+
+      /* Khusus efek halftone untuk tema comic */
+      [data-theme='comic'] .card-comic {
+        background-color: white !important;
+        border: 4px solid black !important;
+        box-shadow: 8px 8px 0px 0px black !important;
+      }
+
+      [data-theme='comic'] .accent-comic {
+        background-color: var(--accent) !important;
+        color: white !important;
+        border: 4px solid black !important;
+        box-shadow: 6px 6px 0px 0px black !important;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
