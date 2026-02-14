@@ -11,33 +11,13 @@ export const THEME_SEQUENCE: ThemeType[] = [
 
 export const PORTFOLIO_DATA: Project[] = [
   {
-    id: 1,
-    name: "Cyberpunk City Simulator",
-    description: "High-detail neon city map with interactive elements.",
-    year: "2024",
-    image: "https://picsum.photos/seed/roblox1/600/400"
+      id: 1,
+      name: "SKYNUT",
+      description: "map gunung di roblox dengan pemandangan yang indah dan menantang untuk dijelajahi.",
+      year: "2026",
+      image: "https://picsum.photos/seed/roblox1/600/400",
+      link: "https://www.roblox.com/share?code=a5d8392d546aaa479af496651b77df30&type=ExperienceDetails&stamp=1770996706839"
   },
-  {
-    id: 2,
-    name: "Fantasy RPG Realm",
-    description: "Open world fantasy map featuring custom trees and ruins.",
-    year: "2023",
-    image: "https://picsum.photos/seed/roblox2/600/400"
-  },
-  {
-    id: 3,
-    name: "Tactical FPS Arena",
-    description: "Balanced competitive map for shooter games.",
-    year: "2023",
-    image: "https://picsum.photos/seed/roblox3/600/400"
-  },
-  {
-    id: 4,
-    name: "Tropical Obby Island",
-    description: "Fun, vibrant obstacle course for casual players.",
-    year: "2022",
-    image: "https://picsum.photos/seed/roblox4/600/400"
-  }
 ];
 
 export const SERVICES_DATA: Service[] = [

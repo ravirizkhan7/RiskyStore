@@ -13,7 +13,7 @@ export interface Project {
   description: string;
   year: string;
   image: string;
-  robloxUrl?: string;
+  link: string;
 }
 
 export interface Service {

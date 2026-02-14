@@ -30,22 +30,35 @@ const Portfolio: React.FC = () => {
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 />
               </div>
+              
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 md:p-10">
                 <div className="flex justify-between items-end gap-4">
                   <div className="flex-grow">
                     <span className="inline-block text-[10px] font-black uppercase tracking-[0.3em] bg-white text-black px-2 py-1 rounded mb-4">{project.year}</span>
-                    <h5 className="text-xl md:text-4xl font-black text-white leading-tight">
-                      {project.name}
-                    </h5>
+                    
+                    {/* Judul sekarang bisa diklik */}
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <h5 className="text-xl md:text-4xl font-black text-white leading-tight hover:text-gray-300 transition-colors">
+                        {project.name}
+                      </h5>
+                    </a>
+                    
                     <p className="text-white/70 mt-2 md:mt-3 text-sm md:text-lg line-clamp-2 max-w-md">
                       {project.description}
                     </p>
                   </div>
-                  <div className="w-14 h-14 rounded-full border-2 border-white/20 flex items-center justify-center shrink-0 group-hover:bg-white group-hover:text-black transition-all">
+
+                  {/* Tombol Panah sebagai Link Utama */}
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-14 h-14 rounded-full border-2 border-white/20 flex items-center justify-center shrink-0 group-hover:bg-white group-hover:text-black transition-all"
+                  >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
