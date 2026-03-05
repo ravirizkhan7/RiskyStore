@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ theme, onNavigate }) => {
           className={`mb-8 tracking-tighter leading-[0.85] break-words ${isComic ? 'text-6xl sm:text-7xl md:text-[11rem] uppercase italic font-black text-black' : 'text-5xl sm:text-7xl md:text-[9rem] font-extrabold'}`}
           style={isComic ? { textShadow: '6px 6px 0px #F44336, 12px 12px 0px #2196F3' } : {}}
         >
-          CREATING THE <br className="hidden md:block" /> <span className={isComic ? 'text-black' : 'text-white opacity-95'}>NEXT LEVEL</span> OF ROBLOX
+          CREATING dgsdgsd THE <br className="hidden md:block" /> <span className={isComic ? 'text-black' : 'text-white opacity-95'}>NEXT LEVEL</span> OF ROBLOX
         </h1>
         
         <p className="text-base sm:text-xl md:text-3xl mb-14 max-w-3xl mx-auto opacity-80 leading-relaxed px-4 font-medium" style={{ color: isComic ? '#000' : 'var(--text-secondary)' }}>
